@@ -14,6 +14,8 @@ var countTest = 0;
 let base64file; // Global variable to store the upload response
 let flag = false;
 var output = "";
+var lang1;
+var languageCounter = 0;
 
 // Function to convert a file to Base64
 function fileToBase64(filePath) {
