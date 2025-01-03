@@ -123,6 +123,25 @@ module.exports = {
     botId: "st-fc458bdc-0acd-50ed-a3c8-f43652a883a8",
     botName: "Multi RGI",
     on_user_message: async function(requestId, data, callback) {
+         if (data.channel.botEvent === 'ON_CONNECT_EVENT' ) {
+            languageCounter++;
+            console.log("languageCounter", languageCounter);
+            //var initLang = (initLangInBotUserSessionContext) ? data.context.session.BotUserSession.lastMessage.messagePayload.botInfo.customData.interactiveLanguage : data.context.session.UserContext.customData.interactiveLanguage;
+                lang1 = "English"
+                console.log("new lang1 English", lang1);
+                data.metaInfo = {
+                    setBotLanguage: lang1
+                };
+ 
+            }
+            else{
+                lang1 = data.context.session.BotUserSession?.lastMessage?.messagePayload?.botInfo?.customData?.interactiveLanguage;
+                //if(lang1 !== lang2){
+                    console.log("lang1 dynamic", lang1);
+                    data.metaInfo = {
+                        setBotLanguage: lang1
+                    };        
+            }
         if (!data.context.session.BotUserSession.entities) {
             data.context.session.BotUserSession.entities = {};
         }
