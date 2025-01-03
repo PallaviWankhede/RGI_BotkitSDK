@@ -10,36 +10,7 @@ const { clear } = require('console');
 
 var Promise = sdk.Promise;
 
-const translateText = async (translatingText) => {
-    const url = 'https://text-translator2.p.rapidapi.com/translate';
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'X-RapidAPI-Host': 'text-translator2.p.rapidapi.com',
-        'X-RapidAPI-Key': 'a8e8473f29msh65b7b08bf777fd3p16d6dajsn2cb15a7add21',
-      },
-      body: new URLSearchParams({
-        text: translatingText,
-        target_language: 'hi',
-        source_language: 'en',
-      }),
-    };
-  
-    try {
-      const response = await fetch(url, options);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const result = await response.json();
-      console.log('Translated Text:', result.data.translatedText);
-    } catch (error) {
-      console.error('Error during translation:', error.message);
-    }
-  };
-  
- 
-  
+
 
 
 module.exports = {
