@@ -4,7 +4,7 @@
     },
     "app": {
         "apiPrefix" : "",
-        "url": "https://9a92-14-140-81-58.ngrok-free.app" 
+        "url": "https://rgi-botkitsdk.onrender.com" 
     },
     "validations": {
         "leastNodeVersion": 10
