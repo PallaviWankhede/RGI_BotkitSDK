@@ -14,8 +14,8 @@ var Promise = sdk.Promise;
 
 
 module.exports = {
-    botId: "st-ebda08ba-61f8-5eed-894a-9fd516a252cc",
-    botName: "RGI NLP Bot",
+    botId: "st-fc458bdc-0acd-50ed-a3c8-f43652a883a8",
+    botName: "Multi RGI",
     on_user_message: async function(requestId, data, callback) {
         console.log("userMessage : ",data.message);
         console.log("user session", JSON.stringify(data.context.session.UserSession));
