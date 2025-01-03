@@ -19,5 +19,6 @@ server.start();
 // sdk.registerBot(require('./BotVariables.js'));
 // sdk.registerBot(require('./LiveChat.js'));
 //sdk.registerBot(require('./UploadDocuements.js'));
-sdk.registerBot(require('./UploadDocuements.js'));
+// sdk.registerBot(require('./UploadDocuements.js'));
+sdk.registerBot(require('./server.js'));
 
