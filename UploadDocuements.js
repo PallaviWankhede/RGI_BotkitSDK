@@ -120,8 +120,8 @@ const downloadFile = async (fileName, fileUrl, destination) => {
 };
 
 module.exports = {
-    botId: "st-96a3b9d6-7ba5-585d-b345-09f43a010db9",
-    botName: "RGI language demo Bot",
+    botId: "st-fc458bdc-0acd-50ed-a3c8-f43652a883a8",
+    botName: "Multi RGI",
     on_user_message: async function(requestId, data, callback) {
         if (!data.context.session.BotUserSession.entities) {
             data.context.session.BotUserSession.entities = {};
